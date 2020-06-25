@@ -10,8 +10,8 @@ var baseParts = basePath.split('/');
 baseParts.splice(-1, 1);
 var finalPath = baseParts.join('/');
 console.log(finalPath);
-var outputTempFilePath = finalPath + '/uploads/temp_user_%d_%d.png';
-var outputFilePath = finalPath +'/uploads/circle_user_%d_%d.png';
+var outputTempFilePath = finalPath + '/uploads/temp_user_%s_%d.png';
+var outputFilePath = finalPath +'/uploads/circle_user_%s_%d.png';
 
 exports.execute = function execute(imagePath, uniqueId, sizesArray) {
   var defer = Q.defer();
